@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #537582;
+}
+
+h1{
+  padding-bottom: 30px;
+  font-family: 'Share Tech', Sans-Serif;
+  color: antiquewhite;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Share Tech', sans-serif;
+  color: antiquewhite;
+}
+
+.input-user, .input-password{
+  position: relative;
+}
+
+#email, #password{
+  padding: 10px;
+  border-radius: 5px;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.input-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 25px);
+  transition: transform .25s;
+  font-size: 16px;
+}
+
+#email:focus+.input-label, #password:focus+.input-label, #email:valid+.input-label, #password:valid+.input-label{
+  transform: translate(10px) scale(.8);
+  padding-inline: 5px;
+  background-color: #6C7A89;
+}
+
+#email:is(:focus, :valid){
+  outline-color: transparent;
+}
+
+.box {
+  width: 500px;
+  height: 700px;
+  background: #6C7A89;
+  box-shadow: 0 0 30px black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-user, .input-password{
+  padding: 8px;
+}
+
+.submit{
+  padding: 23px;
+}
+
+.login{
+  width: 85px;
+  height: 50px;
+  padding: 15px;
+  background-color: #1f566b;
+  color: antiquewhite;
+  border-radius: 25px;
+  border: transparent;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.criar-conta{
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 10px;
+  margin-bottom: auto;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.facebook, .google{
+  display: flex;
+  padding: 10px;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.facebook{
+  display: inline-block;
+  background-color: #2c39ab;
+  color: antiquewhite;
+  font-family: 'Share Tech Mono', monospace;
+  border: transparent;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.google{
+  display: inline-block;
+  background: #b12a2a;
+  color: antiquewhite;
+  border: transparent;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+span{
+  color: #6C7A89;
+}
+
+p{
+  font-size: 16px;
+  padding: 8px;
+}
