@@ -8,7 +8,7 @@
 
 body{
   margin: 0;
-  background-color: #537582;
+  background-color: #5a3c77;
 }
 
 h1{
@@ -56,7 +56,7 @@ h1{
 #email:focus+.input-label, #password:focus+.input-label, #re-password:focus+.input-label, #email:valid+.input-label, #password:valid+.input-label, #re-password:valid+.input-label{
   transform: translate(10px) scale(.8);
   padding-inline: 5px;
-  background-color: #6C7A89;
+  background-color: transparent;
 }
 
 #email:is(:focus, :valid), #password:is(:focus, :valid), #re-password:is(:focus, :valid){
@@ -66,7 +66,7 @@ h1{
 .box {
   width: 500px;
   height: 700px;
-  background: #6C7A89;
+  background: #815b91;
   box-shadow: 0 0 30px black;
   border-radius: 15px;
   display: flex;
@@ -87,7 +87,7 @@ padding: 23px;
   width: 85px;
   height: 50px;
   padding: 15px;
-  background-color: #1f566b;
+  background-color: #591f6b;
   color: antiquewhite;
   border-radius: 25px;
   border: transparent;
@@ -150,10 +150,6 @@ a{
   padding: 15px;
   border-radius: 25px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
-}
-
-span{
-  color: #6C7A89;
 }
 
 p{
